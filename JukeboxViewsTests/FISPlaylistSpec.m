@@ -77,11 +77,11 @@ describe(@"FISPlaylist", ^{
         });
     });
     
-  /*  describe(@"description", ^{
+    describe(@"description", ^{
         it(@"should return an NSString representation of the playlist. Remember \n can be used for new line.",^{
             expect([playlist description]).to.equal(@"1. Title: Dancing in the Moonlight Artist: Thin Lizzy Album: Bad Reputation\n2. Title: Dancing in the Moonlight Artist: King Harvest Album: Dancing in the Moonlight\n3. Title: Jailbreak Artist: Thin Lizzy Album: Jailbreak\n4. Title: Cowboy Song Artist: Thin Lizzy Album: Jailbreak\n");
         });
-    }); */
+    });
     
     describe(@"songAtPosition", ^{
         it(@"should return the song at the position given. This should not start from 0, it should start at 1 because we are humans!",^{

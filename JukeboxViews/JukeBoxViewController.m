@@ -49,7 +49,6 @@
     
           NSInteger integer = [self.whichSong.text integerValue];
     NSNumber *number = [NSNumber numberWithInteger:integer];
-    NSLog(@"Song at position:%@", number);
     FISSong *song = [self.playlist songAtPosition:number];
     [self setupAVAudioPlayWithFileName:song.fileName];
      [self.audioPlayer play];
@@ -63,21 +62,21 @@
 
 - (IBAction)sortByTitle:(id)sender {
     [self.playlist sortSongsByTitle];
-    NSString *string = [[[[self.playlist description]stringByReplacingOccurrencesOfString:@"(" withString:@""]stringByReplacingOccurrencesOfString:@")" withString:@""]stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    self.currentList.text = string;
+   
+    self.currentList.text = [self.playlist description];
     
 }
 
 - (IBAction)sortByArtist:(id)sender {
     [self.playlist sortSongsByArtist];
-    NSString *string = [[[[self.playlist description]stringByReplacingOccurrencesOfString:@"(" withString:@""]stringByReplacingOccurrencesOfString:@")" withString:@""]stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    self.currentList.text = string;
+    
+    self.currentList.text = [self.playlist description];
 }
 
 - (IBAction)sortByAlbum:(id)sender {
     [self.playlist sortSongsByAlbum];
-    NSString *string = [[[[self.playlist description]stringByReplacingOccurrencesOfString:@"(" withString:@""]stringByReplacingOccurrencesOfString:@")" withString:@""]stringByReplacingOccurrencesOfString:@"\"" withString:@""];
-    self.currentList.text = string;
+    
+    self.currentList.text = [self.playlist description];
 }
 
 - (void)setupAVAudioPlayWithFileName:(NSString *)fileName

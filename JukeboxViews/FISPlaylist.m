@@ -71,14 +71,18 @@
             }
             
         NSString *intString = [NSString stringWithFormat:@"%d", i +1];
-        NSString *songString = [NSString stringWithFormat:@"%@. Title: %@ Artist: %@ Album: %@", intString,currentTitle, currentArtist, currentAlbum];
+        NSString *songString = [NSString stringWithFormat:@"%@. Title: %@ Artist: %@ Album: %@\n", intString,currentTitle, currentArtist, currentAlbum];
         
         
         [array addObject:songString];
         
     }
     
-    return [array description];
+    NSString *string = [array componentsJoinedByString:@""];
+    
+    
+    
+    return string;
 
 
 };
