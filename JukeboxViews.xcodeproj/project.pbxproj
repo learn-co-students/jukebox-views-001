@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		26471C091B8B9D30007CDBE0 /* FISPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 26471C061B8B9D30007CDBE0 /* FISPlaylist.m */; };
 		26471C0A1B8B9D30007CDBE0 /* JukeBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26471C081B8B9D30007CDBE0 /* JukeBoxViewController.m */; };
-		26471C0D1B8B9E31007CDBE0 /* FISSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 26471C0C1B8B9E31007CDBE0 /* FISSong.m */; };
+		26471C101B8BA8A4007CDBE0 /* FISSong.m in Sources */ = {isa = PBXBuildFile; fileRef = 26471C0F1B8BA8A4007CDBE0 /* FISSong.m */; };
 		72DD191419A66296004F3C2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191319A66296004F3C2F /* Foundation.framework */; };
 		72DD191619A66296004F3C2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191519A66296004F3C2F /* CoreGraphics.framework */; };
 		72DD191819A66296004F3C2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72DD191719A66296004F3C2F /* UIKit.framework */; };
@@ -49,8 +49,8 @@
 		26471C061B8B9D30007CDBE0 /* FISPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISPlaylist.m; sourceTree = "<group>"; };
 		26471C071B8B9D30007CDBE0 /* JukeBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JukeBoxViewController.h; sourceTree = "<group>"; };
 		26471C081B8B9D30007CDBE0 /* JukeBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JukeBoxViewController.m; sourceTree = "<group>"; };
-		26471C0B1B8B9E31007CDBE0 /* FISSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FISSong.h; path = "../../JUKE/jukebox-views-001/FISSong.h"; sourceTree = "<group>"; };
-		26471C0C1B8B9E31007CDBE0 /* FISSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISSong.m; path = "../../JUKE/jukebox-views-001/FISSong.m"; sourceTree = "<group>"; };
+		26471C0E1B8BA8A4007CDBE0 /* FISSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSong.h; sourceTree = "<group>"; };
+		26471C0F1B8BA8A4007CDBE0 /* FISSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSong.m; sourceTree = "<group>"; };
 		55CEF501CDA5DA8D0F8938FA /* Pods-JukeboxViewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		618C04B2151A5A26B1487B1B /* Pods-JukeboxViewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JukeboxViewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JukeboxViewsTests/Pods-JukeboxViewsTests.release.xcconfig"; sourceTree = "<group>"; };
 		72DD191019A66296004F3C2F /* JukeboxViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JukeboxViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,8 +147,8 @@
 				72DD192319A66296004F3C2F /* FISAppDelegate.m */,
 				72DD192519A66296004F3C2F /* Main.storyboard */,
 				26471C051B8B9D30007CDBE0 /* FISPlaylist.h */,
-				26471C0B1B8B9E31007CDBE0 /* FISSong.h */,
-				26471C0C1B8B9E31007CDBE0 /* FISSong.m */,
+				26471C0E1B8BA8A4007CDBE0 /* FISSong.h */,
+				26471C0F1B8BA8A4007CDBE0 /* FISSong.m */,
 				26471C061B8B9D30007CDBE0 /* FISPlaylist.m */,
 				26471C071B8B9D30007CDBE0 /* JukeBoxViewController.h */,
 				26471C081B8B9D30007CDBE0 /* JukeBoxViewController.m */,
@@ -354,7 +354,7 @@
 				26471C0A1B8B9D30007CDBE0 /* JukeBoxViewController.m in Sources */,
 				26471C091B8B9D30007CDBE0 /* FISPlaylist.m in Sources */,
 				72DD192419A66296004F3C2F /* FISAppDelegate.m in Sources */,
-				26471C0D1B8B9E31007CDBE0 /* FISSong.m in Sources */,
+				26471C101B8BA8A4007CDBE0 /* FISSong.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
