@@ -33,6 +33,7 @@
 		72F5811519E737430059B0B6 /* FISPlaylistSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 72F5811419E737430059B0B6 /* FISPlaylistSpec.m */; };
 		AE0FFE3D4F8AAF33440F142A /* libPods-JukeboxViewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C3D742DE5E6CC28A3FBFFCA /* libPods-JukeboxViewsTests.a */; };
 		D916B57F1CF763150020F354 /* FISSong.m in Sources */ = {isa = PBXBuildFile; fileRef = D916B57E1CF763150020F354 /* FISSong.m */; };
+		D925522D1CFF5D8200CA0BEB /* FISJukeboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D925522C1CFF5D8200CA0BEB /* FISJukeboxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		C7EB35B871B83FBEE290098C /* libPods-JukeboxViews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JukeboxViews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D916B57D1CF763150020F354 /* FISSong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISSong.h; sourceTree = "<group>"; };
 		D916B57E1CF763150020F354 /* FISSong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISSong.m; sourceTree = "<group>"; };
+		D925522B1CFF5D8200CA0BEB /* FISJukeboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISJukeboxViewController.h; sourceTree = "<group>"; };
+		D925522C1CFF5D8200CA0BEB /* FISJukeboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISJukeboxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				72DD192219A66296004F3C2F /* FISAppDelegate.h */,
 				72DD192319A66296004F3C2F /* FISAppDelegate.m */,
 				72DD192519A66296004F3C2F /* Main.storyboard */,
+				D925522B1CFF5D8200CA0BEB /* FISJukeboxViewController.h */,
+				D925522C1CFF5D8200CA0BEB /* FISJukeboxViewController.m */,
 				72DD192B19A66296004F3C2F /* Images.xcassets */,
 				4D3DF6401BC4116A0047AB5C /* Launch Screen.storyboard */,
 				72DD191A19A66296004F3C2F /* Supporting Files */,
@@ -425,6 +430,7 @@
 				72DD192019A66296004F3C2F /* main.m in Sources */,
 				72DD192419A66296004F3C2F /* FISAppDelegate.m in Sources */,
 				D916B57F1CF763150020F354 /* FISSong.m in Sources */,
+				D925522D1CFF5D8200CA0BEB /* FISJukeboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
