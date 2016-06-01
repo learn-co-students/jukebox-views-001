@@ -11,6 +11,7 @@
 @interface FISPlaylist()
 
 - (NSMutableArray *)generateSongObjects;
+- (NSString *)setTextForSongs;
 
 @end
 
@@ -72,7 +73,22 @@
 - (instancetype)init {
     self = [super init];
     self.songs = [self generateSongObjects];
+    self.text = [self setTextForSongs];
     return self;
+}
+
+- (NSString *)setTextForSongs {
+    NSString *songList = @"";
+    NSUInteger i = 1;
+    for(FISSong *song in self.songs) {
+        NSString *songText = [NSString stringWithFormat:@"%lu. ", i];
+        songText = [songText stringByAppendingFormat:@"(Title) %@ ", song.title];
+        songText = [songText stringByAppendingFormat:@"(Artist) %@ ", song.artist];
+        songText = [songText stringByAppendingFormat:@"(Album) %@\n", song.album];
+        songList = [songList stringByAppendingString:songText];
+        i++;
+    }
+    return songList;
 }
 
 @end
