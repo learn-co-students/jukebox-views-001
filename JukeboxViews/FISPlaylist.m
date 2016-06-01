@@ -19,15 +19,24 @@
 @implementation FISPlaylist
 
 - (void)sortSongsByTitle {
-
+    NSSortDescriptor *titleSorter = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES];
+    NSSortDescriptor *artistSorter = [[NSSortDescriptor alloc] initWithKey:@"artist" ascending:YES];
+    self.songs = [self.songs sortedArrayUsingDescriptors:[NSArray arrayWithObjects:titleSorter, artistSorter, nil]];
+    self.text = [self setTextForSongs];
 }
 
 - (void)sortSongsByArtist {
-
+    NSSortDescriptor *artistSorter = [[NSSortDescriptor alloc] initWithKey:@"artist" ascending:YES];
+    NSSortDescriptor *albumSorter = [[NSSortDescriptor alloc] initWithKey:@"album" ascending:YES];
+    self.songs = [self.songs sortedArrayUsingDescriptors:[NSArray arrayWithObjects:artistSorter, albumSorter, nil]];
+    self.text = [self setTextForSongs];
 }
 
 - (void)sortSongsByAlbum {
-
+    NSSortDescriptor *albumSorter = [[NSSortDescriptor alloc] initWithKey:@"album" ascending:YES];
+    NSSortDescriptor *titleSorter = [[NSSortDescriptor alloc] initWithKey:@"title" ascending:YES];
+    self.songs = [self.songs sortedArrayUsingDescriptors:[NSArray arrayWithObjects:albumSorter, titleSorter, nil]];
+    self.text = [self setTextForSongs];
 }
 
 - (FISSong *)songForTrackNumber:(NSUInteger)number {
