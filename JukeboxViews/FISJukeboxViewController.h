@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "FISPlaylist.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface FISJukeboxViewController : UIViewController
 
 @property (nonatomic) FISPlaylist *playlist;
 @property (weak, nonatomic) IBOutlet UITextField *songField;
 @property (weak, nonatomic) IBOutlet UITextView *songs;
+@property (nonatomic) AVAudioPlayer *audioPlayer;
 
 - (IBAction)stop:(id)sender;
 - (IBAction)play:(id)sender;

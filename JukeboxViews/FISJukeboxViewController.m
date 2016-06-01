@@ -18,13 +18,15 @@
 @synthesize songField;
 
 - (IBAction)stop:(id)sender {
-
+    [self.audioPlayer stop];
 }
 
 - (IBAction)play:(id)sender {
     int intVal = [self.songField.text intValue];
     FISSong *song = [self.playlist songForTrackNumber:intVal];
-    NSLog (@"(Title) %@ (Artist) %@ (Album) %@", song.title, song.artist, song.album);
+    [self setUpAVAudioPlayerWithFileName:song.fileName];
+    [self.audioPlayer play];
+//    NSLog (@"(Title) %@ (Artist) %@ (Album) %@", song.title, song.artist, song.album);
 }
 
 - (IBAction)title:(id)sender {
@@ -40,6 +42,20 @@
 - (IBAction)album:(id)sender {
     [self.playlist sortSongsByAlbum];
     self.songs.text = [self.playlist text];
+}
+
+- (void)setUpAVAudioPlayerWithFileName:(NSString *)fileName
+{
+    NSURL *url = [[NSBundle mainBundle] URLForResource:fileName withExtension:@"mp3"];
+    NSError *error = nil;
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    if (!self.audioPlayer)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        [self.audioPlayer prepareToPlay];
+    }
 }
 
 @end
