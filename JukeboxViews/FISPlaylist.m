@@ -40,7 +40,13 @@
 }
 
 - (FISSong *)songForTrackNumber:(NSUInteger)number {
-    return nil;
+    if (number < 1 || number > [self.songs count]) {
+        return nil;
+    } else {
+        NSUInteger index = number - 1;
+        FISSong *song = [self.songs objectAtIndex:index];
+        return song;
+    }
 }
 
 - (NSMutableArray *)generateSongObjects {
