@@ -18,5 +18,6 @@
 - (void)sortSongsByArtist;
 - (void)sortSongsByAlbum;
 - (FISSong *)songForTrackNumber:(NSUInteger)number;
+- (instancetype)init;
 
 @end
